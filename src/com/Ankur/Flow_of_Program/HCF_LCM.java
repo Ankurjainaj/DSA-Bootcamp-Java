@@ -9,6 +9,7 @@ public class HCF_LCM {
         int b = in.nextInt();
         System.out.println("LCM of " + a + " and " + b + " is " + lcm(a, b));
         System.out.println("HCF of " + a + " and " + b + " is " + hcf(a, b));
+        in.close();
     }
 
     static int gcd(int a, int b) {

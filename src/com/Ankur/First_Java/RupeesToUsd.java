@@ -9,5 +9,6 @@ public class RupeesToUsd {
         System.out.print("Enter currency in Rupees ");
         double rupees = in.nextDouble();
         System.out.println("Currency to USD: " + rupees * rate);
+        in.close();
     }
 }

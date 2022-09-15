@@ -15,6 +15,7 @@ public class Armstrong {
                 list.add(i);
         }
         System.out.println("Armstrong numbers between " + a + " and " + b + " is: " + list);
+        in.close();
     }
 
     public static boolean isArmstrong(int n) {

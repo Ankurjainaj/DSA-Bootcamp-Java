@@ -14,5 +14,6 @@ public class SumOfAll {
             } else
                 sum += Integer.parseInt(s);
         }
+        in.close();
     }
 }

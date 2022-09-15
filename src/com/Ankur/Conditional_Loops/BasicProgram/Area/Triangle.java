@@ -1,8 +1,8 @@
-package com.Ankur.Conditional_Loops.Area;
+package com.Ankur.Conditional_Loops.BasicProgram.Area;
 
 import java.util.Scanner;
 
-public class TriangleArea {
+public class Triangle {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -11,5 +11,6 @@ public class TriangleArea {
         double b = in.nextDouble();
         double area = 0.5 * h * b;
         System.out.println("Area of triangle with height " + h + " and breadth " + b + " is: " + area);
+        in.close();
     }
 }

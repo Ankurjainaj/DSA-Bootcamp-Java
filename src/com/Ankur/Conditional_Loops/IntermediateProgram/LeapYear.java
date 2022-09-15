@@ -1,8 +1,9 @@
-package com.Ankur.Flow_of_Program;
+package com.Ankur.Conditional_Loops.IntermediateProgram;
 
 import java.util.Scanner;
 
 public class LeapYear {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int year = in.nextInt();

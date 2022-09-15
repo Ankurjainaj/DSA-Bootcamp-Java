@@ -15,6 +15,6 @@ public class SimpleInterest {
         interest = p * r * t / 100;
         System.out.print("Simple interest: ");
         System.out.format("%.2f", interest);
-
+        in.close();
     }
 }

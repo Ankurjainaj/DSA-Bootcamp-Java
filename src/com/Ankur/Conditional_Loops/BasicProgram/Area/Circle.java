@@ -1,10 +1,10 @@
-package com.Ankur.Conditional_Loops.Area;
+package com.Ankur.Conditional_Loops.BasicProgram.Area;
 
 import java.util.Scanner;
 
 import static com.Ankur.Constants.pi;
 
-public class CircleArea {
+public class Circle {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -12,5 +12,6 @@ public class CircleArea {
         double radius = in.nextDouble();
         double area = pi * radius * radius;
         System.out.println("Area of circle with radius " + radius + " is: " + area);
+        in.close();
     }
 }

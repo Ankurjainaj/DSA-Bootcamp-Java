@@ -8,5 +8,6 @@ public class EvenOdd {
         System.out.print("Enter the number:");
         int n = in.nextInt();
         System.out.println(n % 2 == 0 ? "Even" : "Odd");
+        in.close();
     }
 }

@@ -8,5 +8,6 @@ public class Largest {
         int a = in.nextInt();
         int b = in.nextInt();
         System.out.println("Largest of the two: " + Math.max(a, b));
+        in.close();
     }
 }

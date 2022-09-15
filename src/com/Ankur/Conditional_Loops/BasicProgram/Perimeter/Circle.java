@@ -1,10 +1,10 @@
-package com.Ankur.Conditional_Loops.Perimeter;
+package com.Ankur.Conditional_Loops.BasicProgram.Perimeter;
 
 import java.util.Scanner;
 
 import static com.Ankur.Constants.pi;
 
-public class CirclePerimeter {
+public class Circle {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -12,5 +12,6 @@ public class CirclePerimeter {
         double radius = in.nextDouble();
         double perimeter = 2 * pi * radius;
         System.out.println("Perimeter of circle with radius " + radius + " is: " + perimeter);
+        in.close();
     }
 }

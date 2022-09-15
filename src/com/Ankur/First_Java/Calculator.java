@@ -24,5 +24,6 @@ public class Calculator {
             default:
                 System.out.println("enter a valid operator");
         }
+        in.close();
     }
 }
