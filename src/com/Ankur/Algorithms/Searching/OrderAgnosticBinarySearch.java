@@ -14,10 +14,10 @@ public class OrderAgnosticBinarySearch {
         System.out.println(orderAgnosticSearch(arr, target));
     }
 
-    static int orderAgnosticSearch(int arr[], int target) {
+    static int orderAgnosticSearch(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
-        boolean isAsc = arr[start] > arr[end];
+        boolean isAsc = arr[start] < arr[end];
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (arr[mid] == target)
