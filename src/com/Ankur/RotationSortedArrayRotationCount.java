@@ -11,7 +11,6 @@ public class RotationSortedArrayRotationCount {
         for (int i = 0; i < n; i++) {
             arr[i] = in.nextInt();
         }
-        int target = in.nextInt();
         System.out.println(findPivot(arr) + 1);
     }
 
