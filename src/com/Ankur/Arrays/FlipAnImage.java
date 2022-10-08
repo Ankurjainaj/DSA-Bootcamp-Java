@@ -44,4 +44,15 @@ public class FlipAnImage {
         return image;
     }
 
+    public static int[][] flipAndInvertImage1(int[][] image) {
+        for (int[] a : image) {
+            for (int i = 0; i < (image[0].length + 1) / 2; i++) {
+                int tmp = a[i] ^ 1;
+                a[i] = a[image[0].length - i - 1] ^ 1;
+                a[image[0].length - i - 1] = tmp;
+            }
+        }
+        return image;
+    }
+
 }
