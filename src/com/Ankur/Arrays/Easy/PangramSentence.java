@@ -1,4 +1,4 @@
-package com.Ankur.Arrays;
+package com.Ankur.Arrays.Easy;
 
 import java.util.HashMap;
 import java.util.Map;
