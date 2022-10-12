@@ -79,7 +79,6 @@ public class RotatedSortedArraySearch {
                 start = mid + 1;
             else
                 end = mid - 1;
-
         }
         return -1;
     }

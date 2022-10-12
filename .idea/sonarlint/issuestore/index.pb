@@ -1,6 +1,4 @@
 
-[
-+src/com/Ankur/RotatedSortedArraySearch.java,f/9/f95ed261ea6c1d2809647122b8099731387fd014
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -8,8 +6,6 @@ Q
 !src/com/Ankur/CustomerWealth.java,0/4/04922711c7ff0b4faf14c7c7f19509364aec031c
 P
  src/com/Ankur/FloorOfNumber.java,7/1/7131a9b3c112ac778e41cbb84f2ab6bacfb4c886
-O
-src/com/Ankur/EvenNoDigits.java,c/1/c16780ef5e11470de068d2722813cfdb5f4b3aae
 q
 Asrc/com/Ankur/Algorithms/Searching/OrderAgnosticBinarySearch.java,3/8/38229c37d1d3c65c3b76bbc11e88c0d23bba7641
 d
@@ -48,3 +44,13 @@ H
 src/com/Ankur/Power.java,8/3/831d18bcea5af15c134851b6b92cb0ed19b72a68
 O
 src/com/Ankur/CountSetBits.java,c/c/cca7749dfb8ea6e33aaa565a7adefbc7d98464dc
+N
+src/com/Ankur/StepsToZero.java,1/1/11aca73dd2b86e0c22e1bf6896c6316005690544
+S
+#src/com/Ankur/ArraySortedOrNot.java,7/6/7695a5dc243c56b90cc3e08c4237647bb41958b6
+M
+src/com/Ankur/NewtonSQRT.java,6/3/63e0c168611afecd4c3906029c7da2c83ae3c2b9
+J
+src/com/Ankur/Factors.java,e/d/ed8775b9600c68c262ba53e4b2240fe28e0ccbbd
+Q
+!src/com/Ankur/NumberOfZeroes.java,f/f/ffb4fe15a118559b923bb4c662abf3b4f7b66c84
