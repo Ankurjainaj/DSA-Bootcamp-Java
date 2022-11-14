@@ -30,5 +30,8 @@ public class CollectionsLearning {
             System.out.println("Exception thrown : " + e);
         }
 
+        AbstractList<Integer> absList= new ArrayList<>();
+        absList.size();
+
     }
 }
