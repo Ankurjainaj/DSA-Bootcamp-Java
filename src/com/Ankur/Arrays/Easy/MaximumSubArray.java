@@ -15,15 +15,31 @@ public class MaximumSubArray {
         System.out.println(maxSubArray(arr));
     }
 
-    static int maxSubArray(int[] arr) {
-        int ans = Integer.MIN_VALUE;
-        int preMin = 0;
-        int sum = 0;
-        for (int num : arr) {
-            sum += num;
-            ans = Math.max(ans, sum - preMin);
-            preMin = Math.min(preMin, sum);
+    static int maxSubArray(int[] nums) {
+//        int ans = Integer.MIN_VALUE;
+//        int preMin = 0;
+//        int sum = 0;
+//        for (int num : arr) {
+//            sum += num;
+//            ans = Math.max(ans, sum - preMin);
+//            preMin = Math.min(preMin, sum);
+//        }
+//        return ans;
+
+
+        if (nums.length == 1) {
+            return nums[0];
+        } else {
+            int cursum = 0;
+            int maxsum = Integer.MIN_VALUE;
+            for (int num : nums) {
+                cursum = cursum + num;
+                if (cursum > maxsum)
+                    maxsum = cursum;
+                if (cursum < 0)
+                    cursum = 0;
+            }
+            return maxsum;
         }
-        return ans;
     }
 }
