@@ -1,6 +1,8 @@
 package com.Ankur;
 
 import java.util.*;
+import java.util.LinkedList;
+import java.util.function.Predicate;
 
 public class CollectionsLearning {
     public static void main(String[] args) {
@@ -32,6 +34,10 @@ public class CollectionsLearning {
 
         AbstractList<Integer> absList= new ArrayList<>();
         absList.size();
+        AbstractSequentialList<Integer> absSeqList = new LinkedList<>();
+        Stack<Integer> stack = new Stack<>();
+        ArrayList<Integer> ar = new ArrayList<>();
+        Vector<Integer> vector = new Vector<>();
 
     }
 }
