@@ -54,3 +54,5 @@ J
 src/com/Ankur/Factors.java,e/d/ed8775b9600c68c262ba53e4b2240fe28e0ccbbd
 Q
 !src/com/Ankur/NumberOfZeroes.java,f/f/ffb4fe15a118559b923bb4c662abf3b4f7b66c84
+_
+/src/com/Ankur/Algorithms/Sorting/QuickSort.java,7/d/7d383f03411e5d0e9f8b3b36896d0fc5fc05c7cb
