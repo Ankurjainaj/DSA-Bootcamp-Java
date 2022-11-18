@@ -23,28 +23,30 @@ public class ArrayIntersection2 {
     }
 
     public static int[] intersect(int[] nums1, int[] nums2) {
-
-        List<Integer> set = new ArrayList<>();
+        if (nums1.length == 0) return nums1;
+        if (nums2.length == 0) return nums2;
         Arrays.sort(nums1);
         Arrays.sort(nums2);
         int i = 0;
         int j = 0;
+        int k = 0;
         while (i < nums1.length && j < nums2.length) {
             if (nums1[i] < nums2[j]) {
                 i++;
             } else if (nums1[i] > nums2[j]) {
                 j++;
             } else {
-                set.add(nums1[i]);
+                nums1[k++] = nums2[j];
                 i++;
                 j++;
             }
         }
-        int[] result = new int[set.size()];
-        int k = 0;
-        for (Integer num : set) {
-            result[k++] = num;
-        }
-        return result;
+        return Arrays.copyOfRange(nums1, 0, k);
+//        int[] result = new int[set.size()];
+//        int k = 0;
+//        for (Integer num : set) {
+//            result[k++] = num;
+//        }
+//        return result;
     }
 }
