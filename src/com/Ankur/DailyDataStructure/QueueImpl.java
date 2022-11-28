@@ -6,50 +6,58 @@ public class QueueImpl {
 
     QueueImpl(int size) {
         capacity = size;
-        front = rear = 0;
+        front = rear = -1;
         queue = new int[size];
     }
 
     public void enqueue(int a) {
-        if (capacity == rear) {
+        if (isFull()) {
             System.out.println("\nQueue is full\n");
-            return;
         } else {
-            queue[rear] = a;
+            if (front == -1) {
+                front = 0; //First element to be added
+            }
             rear++;
+            queue[rear] = a;
+            System.out.println("Insert " + a);
         }
     }
 
-    public void dequeue() {
-        if (front == rear) {
+    public int dequeue() {
+        int element;
+        if (isEmpty()) {
             System.out.println("\nQueue is empty\n");
-            return;
+            return -1;
         } else {
-            for (int i = 0; i < rear - 1; i++) {
-                queue[i] = queue[i + 1];
-            }
-            if (rear < capacity)
-                queue[rear] = 0;
-            rear--;
+            element = queue[front];
+            if (front >= rear) {
+                front = -1;
+                rear = -1;
+            } else
+                front++;
         }
-        return;
+        System.out.println(element + " Deleted");
+        return element;
     }
 
     public void queueDisplay() {
         int i;
-        if (front == rear) {
+        if (isEmpty()) {
             System.out.printf("Queue is Empty\n");
-            return;
         }
         // traverse front to rear and print elements
-        for (i = front; i < rear; i++) {
-            System.out.printf(" %d , ", queue[i]);
-        }
-        return;
+        System.out.println("\nFront index-> " + front);
+
+        // display element of the queue
+        System.out.println("Items -> ");
+        for (i = front; i <= rear; i++)
+            System.out.print(queue[i] + "  ");
+
+        // display the rear of the queue
+        System.out.println("\nRear index-> " + rear);
     }
 
-    public void queueFront()
-    {
+    public void queueFront() {
         if (front == rear) {
             System.out.printf("Queue is Empty\n");
             return;
@@ -58,8 +66,38 @@ public class QueueImpl {
         return;
     }
 
+    public boolean isFull() {
+        return front == 0 && rear == capacity - 1;
+    }
+
+    public boolean isEmpty() {
+        return front == -1;
+    }
+
     public static void main(String[] args) {
 
+        QueueImpl q = new QueueImpl(5);
+
+        // try to delete element from the queue
+        // currently queue is empty
+        // so deletion is not possible
+        int dequeue = q.dequeue();
+
+        // insert elements to the queue
+        for (int i = 1; i < 6; i++) {
+            q.enqueue(i);
+        }
+
+        // 6th element can't be added to queue because queue is full
+        q.enqueue(6);
+
+        q.queueDisplay();
+
+        // deQueue removes element entered first i.e. 1
+        q.dequeue();
+
+        // Now we have just 4 elements
+        q.queueDisplay();
     }
 
 }
