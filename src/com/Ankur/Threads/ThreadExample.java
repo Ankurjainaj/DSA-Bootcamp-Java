@@ -1,4 +1,4 @@
-package com.Ankur;
+package com.Ankur.Threads;
 
 // Java program to demonstrate inter-thread communication
 // (wait(), join() and notify())
