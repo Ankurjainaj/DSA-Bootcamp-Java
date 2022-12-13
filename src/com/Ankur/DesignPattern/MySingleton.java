@@ -1,6 +1,6 @@
 package com.Ankur.DesignPattern;
 
-class MySingleton {
+public class MySingleton {
 
     static MySingleton instance = null;
     public int x = 10;
