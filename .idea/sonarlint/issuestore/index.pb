@@ -70,3 +70,9 @@ I
 src/com/Ankur/SubSeq.java,9/3/93f9e29f459ec456e5ced3bd4aefc6281025f058
 H
 src/com/Ankur/Sieve.java,6/9/69e726b9333edff3ba985af1d164967066ae1d83
+I
+src/com/Ankur/SubSet.java,c/d/cdbe85d9881fad92860db541226ff4954254b69d
+d
+4src/com/Ankur/Algorithms/Searching/BinarySearch.java,6/4/64e71f2c146f37aba66f771c41dc9d79541a76e7
+`
+0src/com/Ankur/Algorithms/Sorting/BubbleSort.java,d/e/de064f80f4f2b2482ec634181c28daa7cd15ceff
