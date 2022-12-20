@@ -76,3 +76,11 @@ d
 4src/com/Ankur/Algorithms/Searching/BinarySearch.java,6/4/64e71f2c146f37aba66f771c41dc9d79541a76e7
 `
 0src/com/Ankur/Algorithms/Sorting/BubbleSort.java,d/e/de064f80f4f2b2482ec634181c28daa7cd15ceff
+Z
+*src/com/Ankur/Exercism/DiamondPrinter.java,0/d/0d1f56942749ebd22340983719b217ea46f4c922
+X
+(src/com/Ankur/Exercism/LanguageList.java,a/b/ab10f53f0c49c3b9f935021c0db745327623f4c7
+S
+#src/com/Ankur/Exercism/Anagram.java,f/7/f721586cac2a347479b7f5530d92437da9b9b645
+R
+"src/com/Ankur/Exercism/Matrix.java,a/c/ac4729c0d431a94074d392e3775b82400caf2dc5

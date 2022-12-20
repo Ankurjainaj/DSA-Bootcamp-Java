@@ -3,11 +3,7 @@ package com.Ankur.Threads;
 // Java Program to demonstrate the
 // use of Volatile Keyword in Java
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class VolatileTest {
-    private static final Logger logger = LoggerFactory.getLogger(VolatileTest.class);
     private static volatile int MY_INT = 0;
 
     public static void main(String[] args) {
@@ -18,14 +14,11 @@ public class VolatileTest {
     static class ChangeListener extends Thread {
         @Override
         public void run() {
-            int local_value = MY_INT;
-            while (local_value < 5) {
-                if (local_value != MY_INT) {
-                    LOGGER.log(
-                            Level.INFO,
-                            "Got Change for MY_INT : {0}",
-                            MY_INT);
-                    local_value = MY_INT;
+            int localValue = MY_INT;
+            while (localValue < 5) {
+                if (localValue != MY_INT) {
+                    System.out.println("Got Change for MY_INT : " + MY_INT);
+                    localValue = MY_INT;
                 }
             }
         }
@@ -34,12 +27,10 @@ public class VolatileTest {
     static class ChangeMaker extends Thread {
         @Override
         public void run() {
-            int local_value = MY_INT;
+            int localValue = MY_INT;
             while (MY_INT < 5) {
-                LOGGER.log(Level.INFO,
-                        "Incrementing MY_INT to {0}",
-                        local_value + 1);
-                MY_INT = ++local_value;
+                System.out.println("Incrementing MY_INT to " + (localValue + 1));
+                MY_INT = ++localValue;
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e) {
