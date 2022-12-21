@@ -1,4 +1,4 @@
-package com.Ankur;
+package com.Ankur.LeetCode;
 
 import java.util.Arrays;
 import java.util.Comparator;

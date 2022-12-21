@@ -1,4 +1,4 @@
-package com.Ankur;
+package com.Ankur.Exercism;
 
 public class MicroBlog {
     public static void main(String[] args) {

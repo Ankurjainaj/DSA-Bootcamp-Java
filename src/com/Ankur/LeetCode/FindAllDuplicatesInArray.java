@@ -1,11 +1,11 @@
-package com.Ankur;
+package com.Ankur.LeetCode;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class AllNumbersDisappearedArray {
-    //https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+public class FindAllDuplicatesInArray {
+    //https://leetcode.com/problems/find-all-duplicates-in-an-array/
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
@@ -13,10 +13,10 @@ public class AllNumbersDisappearedArray {
         for (int i = 0; i < n; i++) {
             arr[i] = in.nextInt();
         }
-        System.out.println(findDisappearedNumbers(arr));
+        System.out.println(findDuplicates(arr));
     }
 
-    public static List<Integer> findDisappearedNumbers(int[] arr) {
+    public static List<Integer> findDuplicates(int[] arr) {
         List<Integer> response = new ArrayList<>();
         int i = 0;
         while (i < arr.length) {
@@ -28,10 +28,9 @@ public class AllNumbersDisappearedArray {
             } else
                 i++;
         }
-        //Find the missing numbers
         for (int j = 0; j < arr.length; j++) {
             if (arr[j] != j + 1)
-                response.add(j + 1);
+                response.add(arr[j]);
         }
         return response;
     }

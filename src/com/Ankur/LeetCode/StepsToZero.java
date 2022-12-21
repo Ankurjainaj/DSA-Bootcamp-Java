@@ -1,4 +1,4 @@
-package com.Ankur;
+package com.Ankur.LeetCode;
 
 public class StepsToZero {
     //https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
