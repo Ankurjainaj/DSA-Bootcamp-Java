@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Spliterator;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -43,5 +44,8 @@ public class StreamLearning {
         intStream.forEach(System.out::println);
         intStream = IntStream.generate(() -> (int) (Math.random() * 1000)).limit(10);
         intStream.forEach(System.out::println);
+
+        Comparator<Integer> c = Comparator.comparing(v -> v.compareTo(8));
+        System.out.println(intStream);
     }
 }

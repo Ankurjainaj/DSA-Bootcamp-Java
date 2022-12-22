@@ -69,7 +69,8 @@ public class PhoneNumber {
     }
 
     public static void main(String[] args) {
-        PhoneNumber pn = new PhoneNumber("123456789");
+        PhoneNumber pn = new PhoneNumber("(212)-34- 56789");
+        System.out.println(pn.getNumber());
     }
 
 }
