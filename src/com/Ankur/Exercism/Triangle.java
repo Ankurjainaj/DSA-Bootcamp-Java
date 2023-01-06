@@ -32,8 +32,7 @@ class Triangle {
                 .mapToDouble(Double::doubleValue)
                 .sum();
         return l.stream()
-                .allMatch(side ->
-                        (sum - side > side) && (side > 0));
+                .allMatch(side -> (sum - side > side) && (side > 0));
     };
 
     class TriangleException extends Exception {

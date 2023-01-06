@@ -1,8 +1,11 @@
 package com.Ankur;
 
-import java.util.*;
 import java.util.LinkedList;
+import java.util.*;
+import java.util.function.BiPredicate;
+import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.regex.Pattern;
 
 public class CollectionsLearning {
     public static void main(String[] args) {
@@ -22,7 +25,7 @@ public class CollectionsLearning {
             list.add(4);
             list.add(-5);
             list.add(1);
-            Collections.swap(list, 2,3);
+            Collections.swap(list, 2, 3);
             int i = Collections.binarySearch(list, 3);
             Collections.shuffle(list);
             // printing the max value
@@ -32,7 +35,7 @@ public class CollectionsLearning {
             System.out.println("Exception thrown : " + e);
         }
 
-        AbstractList<Integer> absList= new ArrayList<>();
+        AbstractList<Integer> absList = new ArrayList<>();
         absList.size();
         AbstractSequentialList<Integer> absSeqList = new LinkedList<>();
         Stack<Integer> stack = new Stack<>();
